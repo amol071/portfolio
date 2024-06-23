@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top initial">
+        <a class="navbar-brand initial" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+                <li class="nav-item"><a class="nav-link" href="#instagram">Instagram</a></li>
+                <li class="nav-item"><a class="nav-link" href="#youtube">YouTube</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="container-fluid d-flex align-items-center text-center vh-100 position-relative">
+        <div id="carouselExampleIndicators" class="carousel slide w-100 h-100" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel/tech-1.jpg" class="d-block w-100 h-100 zoom opaque" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/tech-2.jpg" class="d-block w-100 h-100 zoom opaque" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/tech-3.jpg" class="d-block w-100 h-100 zoom opaque" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/tech-4.jpg" class="d-block w-100 h-100 zoom opaque" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/tech-5.jpg" class="d-block w-100 h-100 zoom opaque" alt="Image 5">
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="text-left mx-auto">
+                <h1 class="display-1">Hi!</h1>
+                <h2 class="display-4">I'm Amol Vyavaharkar</h2>
+                <h3 class="lead">Web & AI Developer</h3>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container-fluid d-flex align-items-center text-center vh-100">
+        <div class="container d-flex align-items-center">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="profile-img">
+                        <img src="images/amol.jpg" alt="Profile Image" class="img-fluid">
+                    </div><br>
+                    <a href="#" class="btn btn-primary mt-3">Download Resume</a>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="section-title text-left">ABOUT ME</h2>
+                    <p class="text-left">Hello! I'm Amol Vyavaharkar, a Web & AI Developer with over 6 years of experience. Experienced with all stages of the development cycle for dynamic web projects. Having an in-depth knowledge including advanced HTML5, CSS3, JavaScript, jQuery, ASP. Net(MVC,Core,Angular), Microsoft SQL and Azure AI.</p>
+                    <div class="text-left">
+                        <p><strong>NAME:</strong> Amol Kiran Vyavaharkar</p>
+                        <p><strong>DATE OF BIRTH:</strong> 22 January 1996</p>
+                        <p><strong>NATIONALITY:</strong> Indian</p>
+                        <p><strong>E-MAIL:</strong> amolvyavaharkar@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container-fluid d-flex align-items-center text-center vh-100 bg-dark text-white">
+        <div class="mx-auto">
+            <h2 class="section-title">My Professional Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>HTML</h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>CSS</h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>JavaScript</h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="container-fluid d-flex align-items-center text-center vh-100">
+        <div class="mx-auto">
+            <h2 class="section-title">Some of My Works</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of Project 2.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instagram" class="container-fluid d-flex align-items-center text-center vh-100 bg-dark text-white">
+        <div class="mx-auto">
+            <h2 class="section-title">Instagram Feed</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="instagram1.jpg" class="card-img-top" alt="Instagram Post 1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="instagram2.jpg" class="card-img-top" alt="Instagram Post 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="instagram3.jpg" class="card-img-top" alt="Instagram Post 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="youtube" class="container-fluid d-flex align-items-center text-center vh-100">
+        <div class="mx-auto">
+            <h2 class="section-title">YouTube Channel</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoid1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoid2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container-fluid d-flex align-items-center text-center vh-100 bg-dark text-white">
+        <div class="mx-auto">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control bg-dark text-white" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control bg-dark text-white" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control bg-dark text-white" id="message" rows="3" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        &copy; 2024 My Portfolio
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
