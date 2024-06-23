@@ -32,5 +32,18 @@ $(document).ready(function() {
             $('#navbar').removeClass('scrolled').addClass('initial');
             $('.navbar-brand').removeClass('scrolled').addClass('initial');
         }
+
+        // Show back to top button
+        if ($(document).scrollTop() > $('#about').offset().top - 100) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+
+    // Back to top button click event
+    $('#back-to-top').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 800);
     });
 });
