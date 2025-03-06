@@ -1,0 +1,201 @@
+/* work-styles.css */
+
+/* Section Customization for About & Work Pages */
+.section-container {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #1b263b;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: #1b98e0;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: #6c757d; /* Initial background color */
+  color: #ffffff; /* Initial text color */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+  min-height: 80px; /* Fixed height for all boxes */
+  height: 100%; /* Ensure consistent height */
+  min-width: 100%; /* Ensure consistent width */
+  font-size: 1rem; /* Adjust text size for readability */
+  text-align: center; /* Center-align text */
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Break long words */
+  overflow: hidden; /* Prevent overflow */
+  padding: 0.5rem; /* Add padding for breathing space */
+}
+
+.skill-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  background-color: #1b98e0 !important; /* Change background color */
+  color: #ffffff !important; /* Ensure text stays readable */
+}
+
+.row-cols-2 .col {
+  flex: 1 1 auto; /* Ensure equal width columns */
+}
+
+/* Experience Section */
+.experience {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e8f1f2;
+  padding-bottom: 20px;
+}
+
+.experience h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.experience p {
+  color: #dcdcdc;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.experience ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience ul li {
+  color: #e8f1f2;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .skills-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .experience h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience p,
+  .experience ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: #1b98e0;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: #6c757d; /* Initial background color */
+  color: #ffffff; /* Initial text color */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+  min-height: 80px; /* Fixed height for all boxes */
+  height: 100%; /* Ensure consistent height */
+  min-width: 100%; /* Ensure consistent width */
+  font-size: 1rem; /* Adjust text size for readability */
+  text-align: center; /* Center-align text */
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Break long words */
+  overflow: hidden; /* Prevent overflow */
+  padding: 0.5rem; /* Add padding for breathing space */
+}
+
+.skill-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  background-color: #1b98e0 !important; /* Change background color */
+  color: #ffffff !important; /* Ensure text stays readable */
+}
+
+.row-cols-2 .col {
+  flex: 1 1 auto; /* Ensure equal width columns */
+}
+
+/* Experience Section */
+.experience {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e8f1f2;
+  padding-bottom: 20px;
+}
+
+.experience h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.experience p {
+  color: #dcdcdc;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.experience ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience ul li {
+  color: #e8f1f2;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .skills-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .experience h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience p,
+  .experience ul li {
+    font-size: 0.9rem;
+  }
+}
