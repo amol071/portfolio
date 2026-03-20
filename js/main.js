@@ -6,27 +6,27 @@
 /* ---- CONFIG — UPDATE THESE ---- */
 const CONFIG = {
   github: {
-    username: 'amolvyavaharkar',       // ← your GitHub username
+    username: 'amol071',       // ← your GitHub username
     pinnedRepos: [],                    // optional: pin specific repo names first
   },
   youtube: {
-    channelId:  'UCxxxxxxxxxxxxxxxx',  // ← your YouTube channel ID
-    channelUrl: 'https://www.youtube.com/@YourChannel', // ← your channel URL
+    channelId:  'UC6XDWvPa7El3B8CjIuneyRg',  // ← your YouTube channel ID
+    channelUrl: 'https://www.youtube.com/@alphamikeoscarlima', // ← your channel URL
+    apiKey: 'AIzaSyDlq--6qsA9P6Bcyav9PJ5my46flo3c8j8', // ← your YouTube Data API v3 key (get from Google Cloud Console)
     videos: [
-      // Add your video IDs here — the site will use these for the video grid
-      // { id: 'dQw4w9WgXcQ', title: 'Video Title', date: 'Mar 2025', views: '10K', duration: '45:12' },
+      // This will be populated automatically from API
     ],
-    featuredVideoId: '',               // ← your latest/featured video ID
+    featuredVideoId: 'Q-bwFniLKig',               // ← will be set to latest video automatically
   },
   instagram: {
-    handle: 'yourusername',            // ← your Instagram handle
-    url: 'https://instagram.com/yourusername',
+    handle: 'alphamikeoscarlima',            // ← your Instagram handle
+    url: 'https://instagram.com/alphamikeoscarlima',
   },
   social: {
-    github:    'https://github.com/amolvyavaharkar',
-    youtube:   'https://www.youtube.com/@YourChannel',
-    instagram: 'https://instagram.com/yourusername',
-    twitter:   '',                     // optional
+    github:    'https://github.com/amol071',
+    youtube:   'https://www.youtube.com/@alphamikeoscarlima',
+    instagram: 'https://instagram.com/alphamikeoscarlima',
+    twitter:   'https://x.com/Amol07Amol',                     // optional
   }
 };
 
@@ -212,8 +212,41 @@ function initFilterBar() {
 /* =====================================================
    VIDEOS PAGE
    ===================================================== */
-function initVideosPage() {
+async function initVideosPage() {
+  await fetchYouTubeVideos();
   renderVideos();
+}
+
+async function fetchYouTubeVideos() {
+  if (!CONFIG.youtube.apiKey || !CONFIG.youtube.channelId) {
+    console.warn('YouTube API key or channel ID not configured. Using fallback.');
+    return;
+  }
+
+  try {
+    const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${CONFIG.youtube.apiKey}&channelId=${CONFIG.youtube.channelId}&part=snippet&order=date&maxResults=20&type=video`);
+    const data = await response.json();
+
+    if (data.error) {
+      console.error('YouTube API error:', data.error);
+      return;
+    }
+
+    CONFIG.youtube.videos = data.items.map(item => ({
+      id: item.id.videoId,
+      title: item.snippet.title,
+      date: new Date(item.snippet.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short' }),
+      thumbnail: item.snippet.thumbnails.medium.url,
+      description: item.snippet.description
+    }));
+
+    // Set featured video to the latest one
+    if (CONFIG.youtube.videos.length > 0) {
+      CONFIG.youtube.featuredVideoId = CONFIG.youtube.videos[0].id;
+    }
+  } catch (error) {
+    console.error('Failed to fetch YouTube videos:', error);
+  }
 }
 
 function renderVideos() {
@@ -223,8 +256,8 @@ function renderVideos() {
     grid.innerHTML = `
       <div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--clr-text-2);">
         <p style="font-size:2rem;margin-bottom:1rem;">🎮</p>
-        <p style="font-family:var(--ff-head);font-size:1.1rem;margin-bottom:0.5rem;">No videos configured yet.</p>
-        <p>Add your YouTube video IDs to <code style="color:var(--clr-accent)">CONFIG.youtube.videos</code> in <strong>js/main.js</strong>.</p>
+        <p style="font-family:var(--ff-head);font-size:1.1rem;margin-bottom:0.5rem;">No videos loaded.</p>
+        <p>Check console for API errors or configure your YouTube API key in <code style="color:var(--clr-accent)">js/main.js</code>.</p>
         <a href="${CONFIG.youtube.channelUrl}" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;">
           <i class="fab fa-youtube"></i> View Channel
         </a>
@@ -236,18 +269,17 @@ function renderVideos() {
 }
 
 function videoCardHTML(v) {
+  const thumbUrl = v.thumbnail || `https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
   return `
     <a href="https://youtube.com/watch?v=${v.id}" target="_blank" class="card video-card reveal" style="padding:0;text-decoration:none;">
       <div class="video-thumb">
-        <img src="https://img.youtube.com/vi/${v.id}/mqdefault.jpg" alt="${v.title}" loading="lazy">
+        <img src="${thumbUrl}" alt="${v.title}" loading="lazy">
         <div class="video-play-overlay"><i class="fas fa-play-circle"></i></div>
       </div>
       <div class="video-card-body">
         <p class="video-title">${v.title}</p>
         <div class="video-meta-row">
           <span><i class="fas fa-calendar-alt"></i> ${v.date || ''}</span>
-          ${v.views ? `<span><i class="fas fa-eye"></i> ${v.views}</span>` : ''}
-          ${v.duration ? `<span><i class="fas fa-clock"></i> ${v.duration}</span>` : ''}
         </div>
       </div>
     </a>`;
