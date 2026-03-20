@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Amol Vyavaharkar</title>
+  <meta name="description" content="Explore Amol Vyavaharkar's web development projects on GitHub.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>AV</span><span class="logo-accent">.DEV</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html"    class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="about.html"    class="nav-link" data-page="about.html">About</a></li>
+      <li><a href="projects.html" class="nav-link" data-page="projects.html">Projects</a></li>
+      <li><a href="videos.html"   class="nav-link" data-page="videos.html">Streams</a></li>
+      <li><a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html"    class="nav-link" data-page="index.html">Home</a>
+  <a href="about.html"    class="nav-link" data-page="about.html">About</a>
+  <a href="projects.html" class="nav-link" data-page="projects.html">Projects</a>
+  <a href="videos.html"   class="nav-link" data-page="videos.html">Streams</a>
+  <a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a>
+  <div class="mobile-menu-actions"><button class="theme-toggle"><i class="fas fa-sun"></i></button></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow-1"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="page-hero-eyebrow">GitHub Projects</div>
+      <h1 class="page-hero-title">Things I've <span class="gradient-text">Built</span></h1>
+      <p class="page-hero-sub">Open-source projects, experiments, and tools — pulled live from my GitHub.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+  <div class="container">
+
+    <!-- GitHub CTA bar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;" class="reveal">
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="typescript">TypeScript</button>
+        <button class="filter-btn" data-filter="html">HTML / CSS</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+      <a href="https://github.com/amolvyavaharkar" target="_blank" class="btn btn-ghost btn-sm" id="gh-profile-link">
+        <i class="fab fa-github"></i> GitHub Profile
+      </a>
+    </div>
+
+    <!-- Projects grid — loaded by JS -->
+    <div class="projects-grid" id="projects-grid">
+      <div class="loading-spinner" style="grid-column:1/-1">
+        <div class="spinner"></div><p>Loading repositories…</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-sm" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="channel-cta reveal">
+      <div style="font-size:2.5rem;margin-bottom:1rem;">🚀</div>
+      <h3>Want to collaborate?</h3>
+      <p>I'm always open to interesting projects, freelance work, or just a good chat about web dev and gaming.</p>
+      <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">AV<span class="gradient-text">.DEV</span></div>
+        <p class="footer-brand-desc">Web Developer & YouTube Game Streamer.</p>
+        <div class="footer-social">
+          <a href="https://github.com/amolvyavaharkar" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" id="footer-yt"><i class="fab fa-youtube"></i></a>
+          <a href="#" target="_blank" id="footer-ig"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="about.html">About</a>
+          <a href="projects.html">Projects</a><a href="videos.html">Streams</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-links">
+          <a href="https://github.com/amolvyavaharkar" target="_blank">GitHub</a>
+          <a href="#" id="footer-yt2" target="_blank">YouTube</a>
+          <a href="#" id="footer-ig2" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Amol Kiran Vyavaharkar. Built with <span style="color:var(--clr-accent)">♥</span> and a lot of caffeine.</p>
+      <button class="footer-scroll-top"><i class="fas fa-chevron-up"></i></button>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const set = (id, href) => { const el = document.getElementById(id); if (el && href) el.href = href; };
+    set('gh-profile-link', CONFIG.social.github);
+    set('footer-yt',  CONFIG.social.youtube);
+    set('footer-ig',  CONFIG.social.instagram);
+    set('footer-yt2', CONFIG.social.youtube);
+    set('footer-ig2', CONFIG.social.instagram);
+  });
+</script>
+</body>
+</html>

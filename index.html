@@ -1,96 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amol Vyavaharkar Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amol Vyavaharkar — Web Dev & Game Streamer</title>
+  <meta name="description" content="Amol Kiran Vyavaharkar — Web Developer and YouTube Game Streamer. Explore my projects, streams, and more.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
 
-    <!-- Google Analytics Tag -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4KPS14D3TM"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<!-- ====================================================
+     NAVIGATION
+     ==================================================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span>AV</span><span class="logo-accent">.DEV</span>
+    </a>
 
-      gtag("config", "G-4KPS14D3TM");
-    </script>
+    <ul class="nav-links">
+      <li><a href="index.html"    class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="about.html"    class="nav-link" data-page="about.html">About</a></li>
+      <li><a href="projects.html" class="nav-link" data-page="projects.html">Projects</a></li>
+      <li><a href="videos.html"   class="nav-link" data-page="videos.html">Streams</a></li>
+      <li><a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a></li>
+    </ul>
 
-    <style>
-      /* Add a height to ensure the container occupies full screen */
-      .full-screen-container {
-        min-height: 100vh;
-      }
-    </style>
-  </head>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
 
-  <body>
-    <!-- Loading Screen -->
-    <div
-      id="loading-screen"
-      class="d-flex justify-content-center align-items-center position-fixed vw-100 vh-100 bg-dark"
-    >
-      <div class="loader"></div>
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <a href="index.html"    class="nav-link" data-page="index.html">Home</a>
+  <a href="about.html"    class="nav-link" data-page="about.html">About</a>
+  <a href="projects.html" class="nav-link" data-page="projects.html">Projects</a>
+  <a href="videos.html"   class="nav-link" data-page="videos.html">Streams</a>
+  <a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a>
+  <div class="mobile-menu-actions">
+    <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+  </div>
+</div>
+
+<!-- ====================================================
+     HERO
+     ==================================================== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <!-- Text -->
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <i class="fas fa-gamepad"></i>
+          Available for work &amp; collabs
+        </div>
+
+        <h1 class="hero-name">
+          <span class="name-line">Hey, I'm</span>
+          <span class="name-line name-line-main">Amol<br>Vyavaharkar</span>
+        </h1>
+
+        <div class="hero-roles">
+          <span class="typed-text"></span><span class="hero-cursor"></span>
+        </div>
+
+        <p class="hero-bio">
+          I build modern web experiences by day and stream games for the world by night.
+          Based in India 🇮🇳 — passionate about clean code, great UI, and epic gaming moments.
+        </p>
+
+        <div class="hero-btns">
+          <a href="projects.html" class="btn btn-primary">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+          <a href="videos.html" class="btn btn-outline">
+            <i class="fab fa-youtube"></i> Watch Streams
+          </a>
+          <a href="contact.html" class="btn btn-ghost">
+            <i class="fas fa-paper-plane"></i> Say Hello
+          </a>
+        </div>
+
+        <div class="hero-social">
+          <a href="https://github.com/amolvyavaharkar"  target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="YouTube" id="hero-yt-link">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram" id="hero-ig-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter" id="hero-tw-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual">
+        <div class="hero-avatar-wrap">
+          <div class="hero-avatar-ring"></div>
+          <div class="hero-avatar">
+            <!-- Replace with <img src="assets/avatar.jpg" alt="Amol"> once you add a photo -->
+            <span class="hero-avatar-placeholder">AV</span>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num" id="stat-repos">—</div>
+            <div class="hero-stat-label">Repos</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">∞</div>
+            <div class="hero-stat-label">Games Played</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Passion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- ====================================================
+     FEATURED PROJECTS
+     ==================================================== -->
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">GitHub</div>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <p class="section-desc">A selection of my latest work — from web apps to experiments.</p>
     </div>
 
-    <div
-      class="container d-flex flex-column justify-content-center align-items-center text-center full-screen-container"
-    >
-      <!-- Header Section -->
-      <header class="mb-4">
-        <img
-          src="images/amol.jpg"
-          alt="Amol Vyavaharkar"
-          class="profile-pic rounded-circle img-fluid mb-3"
-          style="max-width: 150px"
-        />
-        <h1 class="name fs-2 fw-bold">Amol Kiran Vyavaharkar</h1>
-        <h2 class="title fs-5 text-secondary">Full-Stack .NET Developer</h2>
-      </header>
+    <div class="featured-grid" id="featured-projects-grid">
+      <!-- Loaded via JS from GitHub API -->
+      <div class="loading-spinner" style="grid-column:1/-1">
+        <div class="spinner"></div><p>Fetching projects…</p>
+      </div>
+    </div>
 
-      <!-- Navigation Section -->
-      <nav class="navigation mb-4">
-        <ul class="nav flex-column flex-md-row justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link text-primary fw-bold" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary fw-bold" href="work.html">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary fw-bold" href="contact.html"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <div style="text-align:center;margin-top:2.5rem;" class="reveal">
+      <a href="projects.html" class="btn btn-outline">
+        <i class="fas fa-th-large"></i> All Projects
+      </a>
+    </div>
+  </div>
+</section>
 
-      <!-- Footer Section -->
-      <footer class="mt-4">
-        <a
-          href="https://github.com/amol071"
-          target="_blank"
-          class="github-link"
-        >
-          <img
-            src="images/github-mark-white.png"
-            alt="GitHub"
-            class="img-fluid"
-            style="width: 30px"
-          />
+<!-- ====================================================
+     LATEST VIDEO
+     ==================================================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">YouTube</div>
+      <h2 class="section-title">Latest <span>Stream</span></h2>
+      <p class="section-desc">Catch the latest gaming content from my channel.</p>
+    </div>
+
+    <div class="video-feature-wrap">
+      <div class="video-embed-wrap reveal-left" id="home-video-embed">
+        <!-- Video loads via JS; fallback if no ID configured -->
+        <iframe id="featured-iframe"
+          src="about:blank"
+          title="Featured Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="video-feature-info reveal-right">
+        <div class="video-label">
+          <span class="video-live-dot"></span> Latest Upload
+        </div>
+        <h3 class="video-feature-title" id="home-video-title">Check Out My Channel</h3>
+        <p class="video-feature-desc" id="home-video-desc">
+          I stream a variety of games — from intense FPS action to relaxing RPG adventures.
+          Come hang out, drop a comment, and don't forget to subscribe!
+        </p>
+        <div class="video-meta">
+          <div class="video-meta-item"><i class="fab fa-youtube"></i> Gaming & Streaming</div>
+          <div class="video-meta-item"><i class="fas fa-gamepad"></i> Live & VODs</div>
+        </div>
+        <a href="#" id="home-channel-btn" target="_blank" class="btn btn-primary">
+          <i class="fab fa-youtube"></i> Visit Channel
         </a>
-      </footer>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts/scripts.js"></script>
-  </body>
+<!-- ====================================================
+     ABOUT TEASER
+     ==================================================== -->
+<section class="section section-sm" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;" class="about-teaser-grid">
+      <div class="reveal-left">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title" style="text-align:left;margin-bottom:1rem;">
+          Developer by day,<br><span>Streamer by night</span>
+        </h2>
+        <p style="color:var(--clr-text-2);line-height:1.75;margin-bottom:1.5rem;">
+          I'm Amol Kiran Vyavaharkar — a web developer with a love for crafting clean, performant UIs,
+          and a gaming content creator who loves sharing epic gaming moments with the world.
+          Whether I'm writing code or commentating a clutch play, I give it 100%.
+        </p>
+        <a href="about.html" class="btn btn-outline">
+          <i class="fas fa-user"></i> More About Me
+        </a>
+      </div>
+      <div class="what-i-do-grid reveal-right">
+        <div class="wid-card">
+          <div class="wid-icon">💻</div>
+          <div class="wid-title">Web Development</div>
+          <div class="wid-desc">Building responsive, modern web apps with clean code and great UX.</div>
+        </div>
+        <div class="wid-card">
+          <div class="wid-icon">🎮</div>
+          <div class="wid-title">Game Streaming</div>
+          <div class="wid-desc">Live gaming sessions and VODs across multiple genres on YouTube.</div>
+        </div>
+        <div class="wid-card">
+          <div class="wid-icon">🎨</div>
+          <div class="wid-title">UI Design</div>
+          <div class="wid-desc">Pixel-perfect designs that are as beautiful as they are functional.</div>
+        </div>
+        <div class="wid-card">
+          <div class="wid-icon">📱</div>
+          <div class="wid-title">Content Creation</div>
+          <div class="wid-desc">Engaging content across YouTube and Instagram for a growing community.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     FOOTER
+     ==================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">AV<span class="gradient-text">.DEV</span></div>
+        <p class="footer-brand-desc">Web Developer & YouTube Game Streamer. Building cool stuff and sharing epic gaming moments.</p>
+        <div class="footer-social">
+          <a href="https://github.com/amolvyavaharkar" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" aria-label="YouTube" id="footer-yt"><i class="fab fa-youtube"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram" id="footer-ig"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" aria-label="Twitter" id="footer-tw"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="videos.html">Streams</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-links">
+          <a href="https://github.com/amolvyavaharkar" target="_blank">GitHub</a>
+          <a href="#" target="_blank" id="footer-yt2">YouTube</a>
+          <a href="#" target="_blank" id="footer-ig2">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Amol Kiran Vyavaharkar. Built with <span style="color:var(--clr-accent)">♥</span> and a lot of caffeine.</p>
+      <button class="footer-scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Wire up CONFIG-dependent links after main.js loads
+  document.addEventListener('DOMContentLoaded', () => {
+    const set = (id, href) => { const el = document.getElementById(id); if (el && href) el.href = href; };
+    set('hero-yt-link',  CONFIG.social.youtube);
+    set('hero-ig-link',  CONFIG.social.instagram);
+    set('footer-yt',     CONFIG.social.youtube);
+    set('footer-ig',     CONFIG.social.instagram);
+    set('footer-yt2',    CONFIG.social.youtube);
+    set('footer-ig2',    CONFIG.social.instagram);
+    set('home-channel-btn', CONFIG.youtube.channelUrl);
+
+    // Featured video iframe
+    if (CONFIG.youtube.featuredVideoId) {
+      document.getElementById('featured-iframe').src =
+        `https://www.youtube.com/embed/${CONFIG.youtube.featuredVideoId}?rel=0&modestbranding=1`;
+    } else {
+      document.getElementById('home-video-embed').innerHTML = `
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg-card);gap:1rem;">
+          <i class="fab fa-youtube" style="font-size:3.5rem;color:#ff4444;opacity:0.7;"></i>
+          <p style="font-family:var(--ff-head);color:var(--clr-text-2);text-align:center;padding:0 2rem;">
+            Set <code style="color:var(--clr-accent)">featuredVideoId</code> in <strong>js/main.js</strong> to embed your video here.
+          </p>
+          <a href="${CONFIG.youtube.channelUrl}" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fab fa-youtube"></i> Visit Channel
+          </a>
+        </div>`;
+    }
+
+    // Stat: repo count
+    fetch(`https://api.github.com/users/${CONFIG.github.username}`)
+      .then(r => r.json())
+      .then(d => { if (d.public_repos) document.getElementById('stat-repos').textContent = d.public_repos + '+'; })
+      .catch(() => {});
+
+    // Wire twitter if set
+    if (CONFIG.social.twitter) {
+      const tw = document.getElementById('hero-tw-link'); if (tw) tw.href = CONFIG.social.twitter;
+    }
+  });
+</script>
+</body>
 </html>

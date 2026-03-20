@@ -1,113 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Amol Vyavaharkar</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Amol Vyavaharkar</title>
+  <meta name="description" content="Learn about Amol Kiran Vyavaharkar — web developer, game streamer, and content creator.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
 
-    <!-- Google Analytics Tag -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4KPS14D3TM"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-4KPS14D3TM");
-    </script>
-  </head>
-
-  <body>
-    <!-- Loading Screen -->
-    <div
-      id="loading-screen"
-      class="d-flex justify-content-center align-items-center position-fixed vw-100 vh-100 bg-dark"
-    >
-      <div class="loader"></div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>AV</span><span class="logo-accent">.DEV</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html"    class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="about.html"    class="nav-link" data-page="about.html">About</a></li>
+      <li><a href="projects.html" class="nav-link" data-page="projects.html">Projects</a></li>
+      <li><a href="videos.html"   class="nav-link" data-page="videos.html">Streams</a></li>
+      <li><a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html"    class="nav-link" data-page="index.html">Home</a>
+  <a href="about.html"    class="nav-link" data-page="about.html">About</a>
+  <a href="projects.html" class="nav-link" data-page="projects.html">Projects</a>
+  <a href="videos.html"   class="nav-link" data-page="videos.html">Streams</a>
+  <a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a>
+  <div class="mobile-menu-actions"><button class="theme-toggle"><i class="fas fa-sun"></i></button></div>
+</div>
 
-    <div class="container py-5">
-      <!-- Header Section -->
-      <header class="mb-4 text-center">
-        <a href="index.html" class="btn btn-primary mb-3"
-          >&larr; Back to Home</a
-        >
-        <h1 class="fs-1 fw-bold">About Me</h1>
-      </header>
-
-      <!-- Navigation Links Section -->
-      <nav class="mb-4">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a href="about.html" class="nav-link text-primary fw-bold">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link text-primary fw-bold">Work</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link text-primary fw-bold"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <!-- About Section -->
-      <main>
-        <section
-          class="card mx-auto p-4 bg-dark text-light shadow-lg"
-          style="max-width: 800px; border-radius: 10px"
-        >
-          <div class="text-center mb-4">
-            <img
-              src="images/amol.jpg"
-              alt="Amol Vyavaharkar"
-              class="about-profile-pic rounded-circle img-fluid"
-              style="max-width: 150px"
-            />
-          </div>
-          <div class="card-body">
-            <p class="card-text">
-              Hello! My name is <strong>Amol Kiran Vyavaharkar</strong>, and I’m
-              a passionate <strong>Full-Stack .NET Developer</strong> with
-              expertise in designing, building, and deploying scalable web
-              applications. With a strong command of technologies such as
-              <strong>ASP.NET Core</strong>, <strong>C#</strong>,
-              <strong>SQL</strong>, and modern front-end frameworks, I aim to
-              deliver elegant solutions to complex challenges.
-            </p>
-
-            <p class="card-text">
-              I enjoy collaborating with teams to craft seamless user
-              experiences while maintaining high-quality code. Whether working
-              on back-end logic or front-end aesthetics, I am committed to
-              bridging the gap between business needs and technology.
-            </p>
-
-            <p class="card-text mt-3">
-              When I'm not coding, you’ll find me exploring new technologies,
-              reading about software design patterns, or contributing to
-              open-source projects on GitHub.
-            </p>
-          </div>
-        </section>
-      </main>
-
-      <!-- Footer Section -->
-      <footer class="mt-5 text-center">
-        <p>&copy; 2024 Amol Kiran Vyavaharkar. All Rights Reserved.</p>
-      </footer>
+<!-- ====================================================
+     PAGE HERO
+     ==================================================== -->
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow-1"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="page-hero-eyebrow">About Me</div>
+      <h1 class="page-hero-title">The Dev <span class="gradient-text">&amp; The Streamer</span></h1>
+      <p class="page-hero-sub">A little bit about who I am, what I build, and what I play.</p>
     </div>
+  </div>
+</section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts/scripts.js"></script>
-  </body>
+<!-- ====================================================
+     ABOUT SECTION
+     ==================================================== -->
+<section class="section">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Sidebar -->
+      <div>
+        <div class="card about-card-profile reveal">
+          <div class="about-avatar">
+            <!-- Replace with your photo: <img src="assets/avatar.jpg" alt="Amol"> -->
+            AV
+          </div>
+          <div class="about-name">Amol Kiran Vyavaharkar</div>
+          <div class="about-handle">@amolvyavaharkar</div>
+          <span class="tag" style="margin:0 auto;">Open to Work</span>
+          <div class="about-quick-links">
+            <a href="https://github.com/amolvyavaharkar" target="_blank" class="about-quick-link">
+              <i class="fab fa-github"></i> GitHub Profile
+            </a>
+            <a href="#" target="_blank" class="about-quick-link" id="about-yt">
+              <i class="fab fa-youtube" style="color:#ff4444"></i> YouTube Channel
+            </a>
+            <a href="#" target="_blank" class="about-quick-link" id="about-ig">
+              <i class="fab fa-instagram" style="color:#e040fb"></i> Instagram
+            </a>
+            <a href="contact.html" class="about-quick-link">
+              <i class="fas fa-envelope" style="color:var(--clr-accent)"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div>
+        <!-- Bio -->
+        <div class="reveal">
+          <div class="section-label">Bio</div>
+          <h2 class="section-title" style="text-align:left;margin-bottom:1.25rem;font-size:1.9rem;">
+            Hey there! I'm <span>Amol</span> 👋
+          </h2>
+          <div class="about-bio">
+            <p>
+              I'm a self-driven web developer from India with a passion for building clean, fast, and visually
+              engaging web experiences. I enjoy the full spectrum of frontend development — from crafting
+              pixel-perfect layouts to connecting them to robust backends.
+            </p>
+            <p>
+              When I'm not shipping code, you'll find me live on YouTube — streaming everything from
+              high-intensity FPS games to laid-back story-driven adventures. Gaming has always been a creative
+              outlet for me, and sharing that with a community makes it even better.
+            </p>
+            <p>
+              I believe great work happens at the intersection of craft and passion. Whether it's a polished UI
+              or a clutch play, I always aim to bring energy and intentionality to everything I create.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="reveal" style="margin-bottom:2.5rem;">
+          <div class="section-label" style="margin-bottom:1rem;">Tech Stack</div>
+          <div class="skills-grid">
+            <div class="skill-item"><span class="skill-icon">🌐</span>HTML5</div>
+            <div class="skill-item"><span class="skill-icon">🎨</span>CSS3</div>
+            <div class="skill-item"><span class="skill-icon">⚡</span>JavaScript</div>
+            <div class="skill-item"><span class="skill-icon">⚛️</span>React</div>
+            <div class="skill-item"><span class="skill-icon">🟢</span>Node.js</div>
+            <div class="skill-item"><span class="skill-icon">🗄️</span>SQL</div>
+            <div class="skill-item"><span class="skill-icon">🐙</span>Git</div>
+            <div class="skill-item"><span class="skill-icon">🐳</span>Docker</div>
+            <div class="skill-item"><span class="skill-icon">☁️</span>AWS</div>
+            <div class="skill-item"><span class="skill-icon">🎭</span>Figma</div>
+            <div class="skill-item"><span class="skill-icon">📱</span>Responsive</div>
+            <div class="skill-item"><span class="skill-icon">🔥</span>Firebase</div>
+          </div>
+        </div>
+
+        <!-- What I do -->
+        <div class="reveal">
+          <div class="section-label" style="margin-bottom:1rem;">What I Do</div>
+          <div class="what-i-do-grid">
+            <div class="wid-card">
+              <div class="wid-icon">💻</div>
+              <div class="wid-title">Web Development</div>
+              <div class="wid-desc">Building responsive, accessible, and performant web applications with modern technologies and best practices.</div>
+            </div>
+            <div class="wid-card">
+              <div class="wid-icon">🎮</div>
+              <div class="wid-title">Game Streaming</div>
+              <div class="wid-desc">Live gaming sessions on YouTube — variety gaming, commentary, and community interaction across multiple genres.</div>
+            </div>
+            <div class="wid-card">
+              <div class="wid-icon">🎨</div>
+              <div class="wid-title">UI / UX Design</div>
+              <div class="wid-desc">Translating ideas into clean, intuitive interfaces with Figma and converting them into pixel-perfect code.</div>
+            </div>
+            <div class="wid-card">
+              <div class="wid-icon">📹</div>
+              <div class="wid-title">Content Creation</div>
+              <div class="wid-desc">Creating engaging video content — stream highlights, tutorials, and gaming moments for a growing audience.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     INTERESTS / FUN FACTS
+     ==================================================== -->
+<section class="section section-sm" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Fun Facts</div>
+      <h2 class="section-title">Beyond the <span>Screen</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;">
+      <div class="card reveal delay-1" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🎮</div>
+        <div style="font-family:var(--ff-head);font-weight:700;margin-bottom:0.35rem;">Variety Gamer</div>
+        <div style="color:var(--clr-text-2);font-size:0.9rem;">From FPS to RPG, I've played (and streamed) them all.</div>
+      </div>
+      <div class="card reveal delay-2" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">☕</div>
+        <div style="font-family:var(--ff-head);font-weight:700;margin-bottom:0.35rem;">Coffee Addict</div>
+        <div style="color:var(--clr-text-2);font-size:0.9rem;">Fueling late-night coding sessions and marathon streams.</div>
+      </div>
+      <div class="card reveal delay-3" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🌙</div>
+        <div style="font-family:var(--ff-head);font-weight:700;margin-bottom:0.35rem;">Night Owl</div>
+        <div style="color:var(--clr-text-2);font-size:0.9rem;">Best ideas come at 2am, and so do the best gaming sessions.</div>
+      </div>
+      <div class="card reveal delay-4" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🇮🇳</div>
+        <div style="font-family:var(--ff-head);font-weight:700;margin-bottom:0.35rem;">Made in India</div>
+        <div style="color:var(--clr-text-2);font-size:0.9rem;">Proudly representing Indian gaming and dev culture.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">AV<span class="gradient-text">.DEV</span></div>
+        <p class="footer-brand-desc">Web Developer & YouTube Game Streamer. Building cool stuff and sharing epic gaming moments.</p>
+        <div class="footer-social">
+          <a href="https://github.com/amolvyavaharkar" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" id="footer-yt"><i class="fab fa-youtube"></i></a>
+          <a href="#" target="_blank" id="footer-ig"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="about.html">About</a>
+          <a href="projects.html">Projects</a><a href="videos.html">Streams</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-links">
+          <a href="https://github.com/amolvyavaharkar" target="_blank">GitHub</a>
+          <a href="#" target="_blank" id="footer-yt2">YouTube</a>
+          <a href="#" target="_blank" id="footer-ig2">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Amol Kiran Vyavaharkar. Built with <span style="color:var(--clr-accent)">♥</span> and a lot of caffeine.</p>
+      <button class="footer-scroll-top"><i class="fas fa-chevron-up"></i></button>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const set = (id, href) => { const el = document.getElementById(id); if (el && href) el.href = href; };
+    set('about-yt',   CONFIG.social.youtube);
+    set('about-ig',   CONFIG.social.instagram);
+    set('footer-yt',  CONFIG.social.youtube);
+    set('footer-ig',  CONFIG.social.instagram);
+    set('footer-yt2', CONFIG.social.youtube);
+    set('footer-ig2', CONFIG.social.instagram);
+  });
+</script>
+</body>
 </html>

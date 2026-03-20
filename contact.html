@@ -1,129 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Amol Vyavaharkar</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Amol Vyavaharkar</title>
+  <meta name="description" content="Get in touch with Amol Vyavaharkar — web developer and game streamer.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .instagram-embed-wrap {
+      background: linear-gradient(135deg, rgba(224,64,251,0.08), rgba(255,138,0,0.06));
+      border: 1px solid rgba(224,64,251,0.25);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .instagram-embed-wrap .ig-icon {
+      font-size: 3.5rem;
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .instagram-embed-wrap h3 {
+      font-family: var(--ff-head);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .instagram-embed-wrap p {
+      color: var(--clr-text-2);
+      margin-bottom: 1.5rem;
+    }
+    .btn-instagram {
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(220, 39, 67, 0.3);
+    }
+    .btn-instagram:hover {
+      box-shadow: 0 0 35px rgba(220, 39, 67, 0.45);
+      transform: translateY(-2px);
+    }
+    .availability-badge {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.55rem 1.1rem;
+      background: rgba(16,185,129,0.1);
+      border: 1px solid rgba(16,185,129,0.35);
+      border-radius: var(--radius-sm);
+      font-family: var(--ff-head); font-size: 0.85rem; font-weight: 600;
+      color: #34d399; letter-spacing: 0.04em;
+      margin-bottom: 1.5rem;
+    }
+    .avail-dot {
+      width: 7px; height: 7px; border-radius: 50%; background: #34d399;
+      animation: pulse 1.5s ease infinite;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- Google Analytics Tag -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4KPS14D3TM"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-4KPS14D3TM");
-    </script>
-  </head>
-
-  <body>
-    <div class="container py-5">
-      <!-- Header Section -->
-      <header class="mb-4 text-center">
-        <a href="index.html" class="btn btn-outline-primary mb-3"
-          >&larr; Back to Home</a
-        >
-        <h1 class="text-primary">Get in Touch</h1>
-      </header>
-
-      <!-- Navigation Section -->
-      <nav class="mb-4">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link text-primary fw-bold" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary fw-bold" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary fw-bold" href="work.html">Work</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Main Section -->
-      <main>
-        <section
-          class="card p-4 bg-dark text-light shadow-lg mb-5"
-          style="border-radius: 10px"
-        >
-          <p class="mb-3">
-            Drop me an email if there's anything you'd like to discuss. Whether
-            it's a friendly hello, a potential collaboration, a work
-            opportunity, or even if you want to share a hilarious meme, my inbox
-            is always open.
-          </p>
-          <p class="mb-4">
-            <a href="mailto:amol07@live.com" class="btn btn-primary btn-lg"
-              >amol07@live.com</a
-            >
-          </p>
-
-          <p class="mb-3">
-            If you want to <s>stalk</s> follow me on social media or other
-            corners of the Internet, here are some cool buttons to explore my
-            profiles. Don’t be shy; click away!
-          </p>
-
-          <!-- Social Links -->
-          <div class="d-flex flex-wrap justify-content-center gap-2">
-            <a
-              href="https://www.linkedin.com/in/amolvyavaharkar"
-              target="_blank"
-              class="btn btn-outline-primary"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/amol071"
-              target="_blank"
-              class="btn btn-outline-primary"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://twitter.com/Amol07Amol"
-              target="_blank"
-              class="btn btn-outline-primary"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://stackoverflow.com/users/1234567/amolvyavaharkar"
-              target="_blank"
-              class="btn btn-outline-primary"
-            >
-              Stack Overflow
-            </a>
-          </div>
-
-          <p class="mt-4">
-            Oh, and here's my
-            <a
-              href="https://www.youtube.com/criminalsgamingchannel"
-              class="text-info text-decoration-underline"
-              >youtube</a
-            >
-            channel, in case you missed it. I post gaming videos on it :)
-          </p>
-        </section>
-      </main>
-
-      <!-- Footer Section -->
-      <footer class="mt-5 text-center">
-        <p>&copy; 2024 Amol Kiran Vyavaharkar. All Rights Reserved.</p>
-      </footer>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>AV</span><span class="logo-accent">.DEV</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html"    class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="about.html"    class="nav-link" data-page="about.html">About</a></li>
+      <li><a href="projects.html" class="nav-link" data-page="projects.html">Projects</a></li>
+      <li><a href="videos.html"   class="nav-link" data-page="videos.html">Streams</a></li>
+      <li><a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html"    class="nav-link" data-page="index.html">Home</a>
+  <a href="about.html"    class="nav-link" data-page="about.html">About</a>
+  <a href="projects.html" class="nav-link" data-page="projects.html">Projects</a>
+  <a href="videos.html"   class="nav-link" data-page="videos.html">Streams</a>
+  <a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a>
+  <div class="mobile-menu-actions"><button class="theme-toggle"><i class="fas fa-sun"></i></button></div>
+</div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="page-hero-eyebrow">Get In Touch</div>
+      <h1 class="page-hero-title">Let's <span class="gradient-text">Connect</span></h1>
+      <p class="page-hero-sub">Whether it's a project, a collab, or just a chat — I'm always up for it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left — Social Cards -->
+      <div>
+        <div class="availability-badge reveal">
+          <span class="avail-dot"></span>
+          Available for Freelance & Collabs
+        </div>
+
+        <h2 class="section-title reveal" style="text-align:left;font-size:1.7rem;margin-bottom:0.6rem;">
+          Find me <span>everywhere</span>
+        </h2>
+        <p style="color:var(--clr-text-2);margin-bottom:1.75rem;" class="reveal">
+          Choose your platform — I'm active across all of these.
+        </p>
+
+        <div class="social-cards">
+          <a href="https://github.com/amolvyavaharkar" target="_blank" class="social-card gh reveal delay-1">
+            <div class="social-icon gh"><i class="fab fa-github"></i></div>
+            <div class="social-info">
+              <h4>GitHub</h4>
+              <p>amolvyavaharkar — Code, projects &amp; repos</p>
+            </div>
+            <i class="fas fa-arrow-right social-arrow"></i>
+          </a>
+
+          <a href="#" target="_blank" class="social-card yt reveal delay-2" id="contact-yt">
+            <div class="social-icon yt"><i class="fab fa-youtube"></i></div>
+            <div class="social-info">
+              <h4>YouTube</h4>
+              <p>Game streams, VODs &amp; highlights</p>
+            </div>
+            <i class="fas fa-arrow-right social-arrow"></i>
+          </a>
+
+          <a href="#" target="_blank" class="social-card ig reveal delay-3" id="contact-ig">
+            <div class="social-icon ig"><i class="fab fa-instagram"></i></div>
+            <div class="social-info">
+              <h4>Instagram</h4>
+              <p>Behind the scenes &amp; gaming moments</p>
+            </div>
+            <i class="fas fa-arrow-right social-arrow"></i>
+          </a>
+
+          <a href="#" target="_blank" class="social-card tw reveal delay-4" id="contact-tw">
+            <div class="social-icon tw"><i class="fab fa-twitter"></i></div>
+            <div class="social-info">
+              <h4>Twitter / X</h4>
+              <p>Thoughts, updates &amp; dev stuff</p>
+            </div>
+            <i class="fas fa-arrow-right social-arrow"></i>
+          </a>
+        </div>
+
+        <!-- Instagram highlight card -->
+        <div class="instagram-embed-wrap reveal" style="margin-top:1.75rem;">
+          <div class="ig-icon"><i class="fab fa-instagram"></i></div>
+          <h3>@<span id="ig-handle-display">yourusername</span></h3>
+          <p>Follow me on Instagram for gaming clips, behind-the-scenes content, and random life updates.</p>
+          <a href="#" target="_blank" class="btn btn-instagram" id="ig-follow-btn">
+            <i class="fab fa-instagram"></i> Follow on Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- Right — Contact Form -->
+      <div class="contact-form-wrap reveal-right">
+        <div class="card" style="padding:2.25rem;">
+          <h3 class="form-title">Send a Message</h3>
+          <p class="form-sub">Have a project idea, a collab proposal, or just want to say hi?</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry, Collab, or just Hello!">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or what you'd like to discuss…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:0.85rem;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+
+          <p style="color:var(--clr-muted);font-size:0.8rem;text-align:center;margin-top:1.25rem;">
+            Or reach me directly at
+            <a href="mailto:amol@example.com" style="color:var(--clr-accent)">amol@example.com</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ / Quick answers -->
+<section class="section section-sm" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common <span>Questions</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;">
+      <div class="card reveal delay-1">
+        <div style="font-family:var(--ff-head);font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:var(--clr-primary-lt);">Are you available for freelance work?</div>
+        <div style="color:var(--clr-text-2);font-size:0.9rem;line-height:1.65;">Yes! I'm currently open to freelance web development projects and collaborations. Drop me a message.</div>
+      </div>
+      <div class="card reveal delay-2">
+        <div style="font-family:var(--ff-head);font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:var(--clr-primary-lt);">Can I sponsor your stream?</div>
+        <div style="color:var(--clr-text-2);font-size:0.9rem;line-height:1.65;">Absolutely — reach out via the contact form above or DM me on Instagram for sponsorship inquiries.</div>
+      </div>
+      <div class="card reveal delay-3">
+        <div style="font-family:var(--ff-head);font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:var(--clr-primary-lt);">How fast do you reply?</div>
+        <div style="color:var(--clr-text-2);font-size:0.9rem;line-height:1.65;">I typically respond within 24–48 hours. For urgent matters, Instagram DMs are the fastest.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">AV<span class="gradient-text">.DEV</span></div>
+        <p class="footer-brand-desc">Web Developer & YouTube Game Streamer.</p>
+        <div class="footer-social">
+          <a href="https://github.com/amolvyavaharkar" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" id="footer-yt" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="#" id="footer-ig" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="about.html">About</a>
+          <a href="projects.html">Projects</a><a href="videos.html">Streams</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-links">
+          <a href="https://github.com/amolvyavaharkar" target="_blank">GitHub</a>
+          <a href="#" id="footer-yt2" target="_blank">YouTube</a>
+          <a href="#" id="footer-ig2" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Amol Kiran Vyavaharkar.</p>
+      <button class="footer-scroll-top"><i class="fas fa-chevron-up"></i></button>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const set = (id, href) => { const el = document.getElementById(id); if (el && href) el.href = href; };
+    set('contact-yt',   CONFIG.social.youtube);
+    set('contact-ig',   CONFIG.social.instagram);
+    set('ig-follow-btn', CONFIG.social.instagram);
+    set('footer-yt',    CONFIG.social.youtube);
+    set('footer-ig',    CONFIG.social.instagram);
+    set('footer-yt2',   CONFIG.social.youtube);
+    set('footer-ig2',   CONFIG.social.instagram);
+
+    // Twitter link
+    if (CONFIG.social.twitter) set('contact-tw', CONFIG.social.twitter);
+    else { const tw = document.getElementById('contact-tw'); if (tw) tw.style.opacity = '0.4'; }
+
+    // Instagram handle display
+    const igEl = document.getElementById('ig-handle-display');
+    if (igEl && CONFIG.instagram.handle) igEl.textContent = CONFIG.instagram.handle;
+  });
+</script>
+</body>
 </html>
